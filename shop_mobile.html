@@ -2,20 +2,26 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Ultra Tiger Toys</title>
-<link href="css/normalize.css" rel="stylesheet">
+<title>Craft Billy Beer - Mobile</title>
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Lato%7CSlabo+13px" rel="stylesheet">
-<script src="https://kit.fontawesome.com/4bf0a75058.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- students must convert divs to semantic tags -->
-    <h1 class="hidden">Welcome to Ultra Tiger Toys</h1>
+    <h1 class="hidden">Craft Billy Beer</h1>
 	<div id="container">
+        <header id="header-con-icon">
+            <div id="main-header-icon" class="grid-con">
+                <div id="header-box1-media" class="box-color">
+                </div>
+                <div id="header-box2-cart" class="box-color">
+                </div>
+            </div>
+        </header> 
         <header id="header-con">
             <div id="main-header" class="grid-con">
-                <img src="images/billybeer_logo2.svg" alt="image" id="header-logo">
+                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
                  <div id="mobile-nav">
+                    <h2 class="hidden">Main Navigation</h2>
                     <span class="burger"></span>
                     <span class="burger"></span>
                     <span class="burger"></span>
@@ -24,31 +30,34 @@
         </header> 
 
         <main>
-            <section id="hero-gallery-con">
-                <h2 class="hidden">banner</h2>
+            <section id="banner-hero-con">
+                <h2 class="hidden">Banner</h2>
                 <div class="grid-con">
-                    <div id="hero-gallery-text" class="box-color">
-                    </div>
-                    <div id="gallery-controls">
+                    <!-- <div id="banner-text" class="box-color"></div> -->
+                    <div id="banner-controls">
                         <span class="dot"></span>
                         <span class="dot"></span>
                         <span class="dot"></span>
                     </div>
                 </div>
             </section>
+            
+            <section class="beers-title-con">
+                <h2>Find Our Beers</h2>
+                <div class="beers-title grid-con">
+                    <img src="images/beers-title-icon.svg" alt="icons">
+                    <h3>Lager</h3>
+                </div>
+            </section>
 
-            <section class="grid-con" id="gallery">
-                <h2>Our Products</h2>
-                <section class="gallery-box">
-                    <h2 class="hidden">product_Otaku</h2>
+            <section class="grid-con" id="product-lager">
+                <h2 class="hidden">product_Lager</h2>
+                <div class="product-box">
+                    <a href="#"><img class="product-image" src="images/blacklarger_bg4_resized_1600-h.jpeg" width="340" height="615" alt="image"></a>
                     <ul>
-                        <li><a href="#">
-                            <img src="images/cat_lover01.jpg" width="388" height="242" alt="image">
-                            <i class="fa-solid fa-cart-shopping cart_icon"></i></a>
-                            <input type="checkbox"><span>Otaku</span>
-                        </li>
+                        <li class="product-text">CRAFT BEER 1</li>
+                        <li>ABV 6.5% | IBU 60 | OG 1.104</li>
                     </ul>
-
                     <div class="sl_content">
                         <img src="images/star_icon.png" width="50" height="50" alt="star">
                         <img src="images/star_icon.png" width="50" height="50" alt="star">
@@ -57,18 +66,14 @@
                         <img src="images/star_icon.png" width="50" height="50" alt="star">
                         <span>20 CAD</span>
                     </div>
-                </section>
+                </div>
 
-                        <section class="gallery-box">
-                    <h2 class="hidden">product_Delivery Man</h2>
+                <div class="product-box">
+                    <a href="#"><img class="product-image" src="images/blonde_bg3__resized_1600-h.jpeg" width="340" height="615" alt="image"></a>
                     <ul>
-                        <li><a href="#">
-                            <img src="images/cat_lover02.jpg" width="388" height="242" alt="image">
-                            <i class="fa-solid fa-cart-shopping cart_icon"></i></a>
-                            <input type="checkbox"><span>Delivery Man</span>
-                        </li>
+                        <li class="product-text">CRAFT BEER 2</li>
+                        <li>ABV 6.5% | IBU 60 | OG 1.104</li>
                     </ul>
-
                     <div class="sl_content">
                         <img src="images/star_icon.png" width="50" height="50" alt="star">
                         <img src="images/star_icon.png" width="50" height="50" alt="star">
@@ -77,38 +82,59 @@
                         <img src="images/star_icon.png" width="50" height="50" alt="star">
                         <span>20 CAD</span>
                     </div>
-                </section>
-
-                          <section class="gallery-box">
-                    <h2 class="hidden">product_Himono-onna</h2>
-                    <ul>
-                        <li><a href="#">
-                            <img src="images/cat_lover03.jpg" width="388" height="242" alt="image">
-                            <i class="fa-solid fa-cart-shopping cart_icon"></i></a>
-                            <input type="checkbox"><span>Himono-onna</span>
-                        </li>
-                    </ul>
-
-                    <div class="sl_content">
-                        <img src="images/star_icon.png" width="50" height="50" alt="star">
-                        <img src="images/star_icon.png" width="50" height="50" alt="star">
-                        <img src="images/star_icon.png" width="50" height="50" alt="star">
-                        <img src="images/star_icon.png" width="50" height="50" alt="star">
-                        <img src="images/star_icon.png" width="50" height="50" alt="star">
-                        <span>20 CAD</span>
-                    </div>
-                </section>
+                </div>
                 
-                <section class="gallery-box">
-                    <h2 class="hidden">product_Obasan</h2>
+                <div class="product-box">
+                    <a href="#"><img class="product-image" src="images/extrastout_spritz2_resized_1600.jpeg" width="340" height="615" alt="image"></a>
                     <ul>
-                        <li><a href="#">
-                            <img src="images/cat_lover04.jpg" width="388" height="242" alt="image">
-                            <i class="fa-solid fa-cart-shopping cart_icon"></i></a>
-                            <input type="checkbox"><span>Obasan</span>
-                        </li>
+                        <li class="product-text">CRAFT BEER 3</li>
+                        <li>ABV 6.5% | IBU 60 | OG 1.104</li>
                     </ul>
+                    <div class="sl_content">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <span>20 CAD</span>
+                    </div>
+                </div>
+            </section>
 
+            <section class="beers-title-con">
+                <h2 class="hidden">product_Ale</h2>
+                <div class="beers-title grid-con">
+                    <img src="images/beers-title-icon.svg" alt="icons">
+                    <h3>Ale</h3>
+                </div>
+            </section>
+                
+            <section id="product-ale" class="grid-con">
+                <div class="product-box">
+                    <h2 class="hidden">product_Ale1</h2>
+                    <a href="#"><img class="product-image" src="images/extrastout_spritz2_resized_1600.jpeg" width="340" height="615" alt="image"></a>
+                    <ul>
+                        <li class="product-text">CRAFT BEER 1</li>
+                        <li>ABV 6.5% | IBU 60 | OG 1.104</li>
+                    </ul>
+                    <div class="sl_content">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <span>20 CAD</span>
+                    </div>
+                </div>
+           
+
+                <section class="product-box">
+                    <h2 class="hidden">product_Ale2</h2>
+                    <a href="#"><img class="product-image" src="images/foreignextrastout_bg4_resized_16.jpeg" width="340" height="615" alt="image"></a>
+                    <ul>
+                        <li class="product-text">CRAFT BEER 2</li>
+                        <li>ABV 6.5% | IBU 60 | OG 1.104</li>
+                    </ul>
                     <div class="sl_content">
                         <img src="images/star_icon.png" width="50" height="50" alt="star">
                         <img src="images/star_icon.png" width="50" height="50" alt="star">
@@ -119,16 +145,13 @@
                     </div>
                 </section>
 
-                <section class="gallery-box">
-                    <h2 class="hidden">product_Wage Slave</h2>
+                <section class="product-box">
+                    <h2 class="hidden">product_Ale3</h2>
+                    <a href="#"><img class="product-image" src="images/goldenale_bg3_resized_1600-h.jpeg" width="340" height="615" alt="image"></a>
                     <ul>
-                        <li><a href="#">
-                            <img src="images/cat_lover05.jpg" width="388" height="242" alt="image">
-                            <i class="fa-solid fa-cart-shopping cart_icon"></i></a>
-                            <input type="checkbox"><span>Wage Slave</span>
-                        </li>
+                        <li class="product-text">CRAFT BEER 3</li>
+                        <li>ABV 6.5% | IBU 60 | OG 1.104</li>
                     </ul>
-
                     <div class="sl_content">
                         <img src="images/star_icon.png" width="50" height="50" alt="star">
                         <img src="images/star_icon.png" width="50" height="50" alt="star">
@@ -138,17 +161,117 @@
                         <span>20 CAD</span>
                     </div>
                 </section>
+            </section>
 
-                <section class="gallery-box">
-                    <h2 class="hidden">product_Big Panda</h2>
+            <section class="beers-title-con">
+                <h2 class="hidden">Find Our Beers</h2>
+                <div class="beers-title grid-con">
+                    <img src="images/beers-title-icon.svg" alt="icons">
+                    <h3>Stout</h3>
+                </div>
+            </section>
+
+            <section class="grid-con" id="product-stout">
+                <h2 class="hidden">product_Stout</h2>
+                <section class="product-box">
+                    <h2 class="hidden">product_Stout1</h2>
+                    <a href="#"><img class="product-image" src="images/guinesssmooth2_spritz2_resized_1.jpeg" width="340" height="615" alt="image"></a>
                     <ul>
-                        <li><a href="#">
-                            <img src="images/cat_lover06.jpg" width="388" height="242" alt="image">
-                            <i class="fa-solid fa-cart-shopping cart_icon"></i></a>
-                            <input type="checkbox"><span>Big Panda</span>
-                        </li>
+                        <li class="product-text">CRAFT BEER 1</li>
+                        <li>ABV 6.5% | IBU 60 | OG 1.104</li>
                     </ul>
+                    <div class="sl_content">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon_gray.png" width="50" height="50" alt="star">
+                        <span>15 CAD</span>
+                    </div>
+                </section>
+                <section class="product-box">
+                    <h2 class="hidden">product_Stout2</h2>
+                    <a href="#"><img class="product-image" src="images/guinness_draught_spritzr06bg1_re.jpeg" width="340" height="615" alt="image"></a>
+                    <ul>
+                        <li class="product-text">CRAFT BEER 2</li>
+                        <li>ABV 6.5% | IBU 60 | OG 1.104</li>
+                    </ul>
+                    <div class="sl_content">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon_gray.png" width="50" height="50" alt="star">
+                        <span>10 CAD</span>
+                    </div>
+                </section>
+                <section class="product-box">
+                    <h2 class="hidden">product_Stout3</h2>
+                    <a href="#"><img class="product-image" src="images/hophouse_bg3_resized_1600-h.jpeg" width="340" height="615" alt="image"></a>
+                    <ul>
+                        <li class="product-text">CRAFT BEER 3</li>
+                        <li>ABV 6.5% | IBU 60 | OG 1.104</li>
+                    </ul>
+                    <div class="sl_content">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <span>10 CAD</span>
+                    </div>
+                </section>
+            </section>
 
+            <section class="beers-title-con">
+                <h2 class="hidden">Find Our Beers</h2>
+                <div class="beers-title grid-con">
+                    <img src="images/beers-title-icon.svg" alt="icons">
+                    <h3>Wheat</h3>
+                </div>
+            </section>
+
+            <section class="grid-con" id="product-wheat">
+                <h2 class="hidden">product_Wheat</h2>
+                <section class="product-box">
+                    <h2 class="hidden">product_Wheat1</h2>
+                    <a href="#"><img class="product-image" src="images/nipa_mob.jpeg" width="340" height="615" alt="image"></a>
+                    <ul>
+                        <li class="product-text">CRAFT BEER 1</li>
+                        <li>ABV 6.5% | IBU 60 | OG 1.104</li>
+                    </ul>
+                    <div class="sl_content">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon_gray.png" width="50" height="50" alt="star">
+                        <span>15 CAD</span>
+                    </div>
+                </section>
+                <section class="product-box">
+                    <h2 class="hidden">product_Wheat2</h2>
+                    <a href="#"><img class="product-image" src="images/special_export_spritz2_resized_1.jpeg" width="340" height="615" alt="image"></a>
+                    <ul>
+                        <li class="product-text">CRAFT BEER 2</li>
+                        <li>ABV 6.5% | IBU 60 | OG 1.104</li>
+                    </ul>
+                    <div class="sl_content">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon.png" width="50" height="50" alt="star">
+                        <img src="images/star_icon_gray.png" width="50" height="50" alt="star">
+                        <span>12 CAD</span>
+                    </div>
+                </section>
+                <section class="product-box">
+                    <h2 class="hidden">product_Wheat3</h2>
+                    <a href="#"><img class="product-image" src="images/westindies_bg3_resized_1600-h.jpeg" width="340" height="615" alt="image"></a>
+                    <ul>
+                        <li class="product-text">CRAFT BEER 3</li>
+                        <li>ABV 6.5% | IBU 60 | OG 1.104</li>
+                    </ul>
                     <div class="sl_content">
                         <img src="images/star_icon.png" width="50" height="50" alt="star">
                         <img src="images/star_icon.png" width="50" height="50" alt="star">
@@ -158,50 +281,32 @@
                         <span>20 CAD</span>
                     </div>
                 </section>
-            </section>              
+            </section>
+
+            <section id="choose-us">
+                <h2>Choose Us</h2>
+                <h3>Enjoy your wonderful day</h3>
+            </section>
         </main>
+
+
         <footer id="footer-con">
-            <div class="grid-con">
-                <div id="footer-box">
-                    <div id="footer-logo">
-                        <img src="images/ultra-tiger-toys_logo_02.svg" alt="logo">
-                        <h3>Newsletter - Sign-up</h3>
-                    </div>
+            <div class="grid-con" id="footer">
+                <div id="footer-logo" class="box-color">
                 </div>
-                
-                <div id="footer-newsletter">
-                    <!-- <h3>Newsletter - Sign-up</h3> -->
-                    <form action="email.php" method="POST" enctype="text/plain">
-                        <input name="contactInfo" type="text" required placeholder="Email">
-                        <input name="fullName" type="text" placeholder="First & Last Name">
-                        <input id="footer-newsletter1_submit" class="grid-con" name="submit" type="submit" value="Sign-up">
-                    </form>
+                <div id="footer-location" class="box-color">
                 </div>
-
-                <div id="footer-social">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                <div id="footer-social" class="box-color">
                 </div>
-
-                <nav id="footer-nav">
-                    <h3 class="hidden">Footer Nav</h3>
-                    <ul>
-                        <li class="nav-left grid-con"><a href="#">Privacy Policy</a></li>
-                        <li class="nav-left grid-con"><a href="#">Terms & Conditions</a></li>
-                        <li class="nav-left grid-con"><a href="#">Services</a></li>
-                        <li class="nav-right grid-con"><a href="#">Sales and Refunds</a></li>
-                        <li class="nav-right grid-con"><a href="#">Legal</a></li>
-                    </ul>
+                <nav id="footer-useful-link" class="box-color">
+                    <h2 class="hidden">footer Navigation</h2>
                 </nav>
-
                 <div id="web-creater">
-                    <span> <span>©2022 by Ultra Tiger Toys. Proudly created with JRJi Lab</span></span>
+                    <span>© Copyright 2023 Created by Billy Beer</span>
                 </div>
             </div>
         </footer>
     </div> 
+    <script src="js/main.js"></script>
 </body>
 </html>
