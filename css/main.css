@@ -307,7 +307,7 @@ you work on and the intended audience */
 
 }
 
-#brew-btn {
+.brew-btn {
 	text-align: center;
 	margin-top: 40px;
 }
@@ -381,7 +381,7 @@ you work on and the intended audience */
 
 .about-text-con {
 	margin-top: 30px;
-	font-size: 30px;
+	font-size: 25px;
 	color: #000;
 	text-align: center;
 }
@@ -389,6 +389,9 @@ you work on and the intended audience */
 #about-img {
 	grid-column: 2/6;
 	/* Remove as content will dictate height */
+	background: url(../images/img_3463.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 
 }
 
