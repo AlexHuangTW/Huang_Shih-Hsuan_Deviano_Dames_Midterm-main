@@ -17,22 +17,16 @@
 div,p,body,header,footer,section,article,nav,ul,li,h2,h3 { 
 	margin: 0; 
 	padding: 0; 
-}
-
-img, embed, object, video 
-{
-max-width: 100%;
-}
-
-li {
-	list-style-type: none;
-}
+}	
 
 img { 
 	border: none; /*Remove border if image is a link*/
 	margin: 0; 
 	padding: 0; 
-	cursor: pointer;
+}
+
+li {
+	list-style-type: none;
 }
 
 /*html selectors*/
@@ -58,46 +52,42 @@ a {
 /*Common page elements  */
 
 /*This is essentially a box that we place the whole site in.  
-We center the box using margin 0 auto and give it a fixed width of 1920px.
-1920px would fit a large monitor or tv. Sizes will vary depending on the projects
-you work on and the intended audience */
+We center the box using margin 0 auto and give it a fixed width of 428px.
+428px would fit some phones. Sizes will vary depending on the projects
+you work on and the intended audience, we may go as low as 320px */
 
 #container {
 	margin: 0 auto;
-	width: 1920px;
+	width: 375px;
 }
 
 /* this is our grid based off of our XD file */
 .grid-con {
 	display: grid;
-	grid-template-columns: repeat(12, 122px);
+	grid-template-columns: repeat(4, 71px);
 	grid-column-gap: 16px;
-	padding-left: 140px;
-	padding-right: 140px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
-
-/* 1. header */
 
 #header-con-icon {
 	background-color: rgb(98, 187, 255);
 	padding-top: 10px;
 	padding-bottom: 10px;
-	position: sticky;
-	top: 0;
 }
+
 
 #header-box1-media {
+	height: 50px;
+	grid-column: 1/3;
 	display: flex;
 	align-items: center;
-	grid-column: 1/3;
-	/* Remove as content will dictate height */
 }
-
 
 #header-box1-media a {
 	color: #000000;
-	font-size: 30px;
-	margin: 0 15px;
+	font-size: 25px;
+	margin: 0 5px;
 }
 
 #header-box1-media a:hover {
@@ -107,16 +97,16 @@ you work on and the intended audience */
 }
 
 #header-box2-cart {
+	height: 50px;
+	grid-column: 4/-1;
 	display: flex;
 	align-items: center;
-	grid-column: 10/-1;
-	/* Remove as content will dictate height */
 }
 
 #header-box2-cart a {
 	color: #000000;
 	font-size: 25px;
-	margin: 0 15px;
+	margin: 0 8px;
 }
 
 #header-box2-cart a:hover {
@@ -128,92 +118,49 @@ you work on and the intended audience */
 #header-con {
 	background-color: rgb(255, 255, 255);
 	padding-top: 10px;
-	padding-bottom: 10px;
-	position: sticky;
-	top: 0;
-	z-index:2;
-}
-
-#main-header {
-	height: 180px;
-}
-
-.navList {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.navList li {
-	padding: 3rem;
-}
-
-.navLink {
-	color: rgb(0, 0, 0);
-	font-size: 2rem;
-	Font-Family: 'Slabo 13px', Serif;
-	text-decoration: none;
-}
-
-.navLink:hover {
-	color: #FF7F00;
-	font-size: 2rem;
-	Font-Family: 'Slabo 13px', Serif;
-	text-decoration: none;
-}
-
-#main-nav {
- 	grid-column: 2/6;
-	/* Remove as content will dictate height */
-	height: auto;
 }
 
 #header-logo {
-
-	grid-column: 6/8;
-	/* Remove as content will dictate height */
-	height: auto;
+	grid-column: 1/3;
 }
 
-#main-nav2 {
-	margin-top: 60px;
-	grid-column: 8/-1;
-	/* Remove as content will dictate height */
-	height: auto;
+#mobile-nav {
+	grid-column: 4/-1;
 }
 
-/* Specific to index page desktop  */
+.burger {
+	height: 16px;
+	background-color:#aaa;
+	display: block;
+	margin-bottom: 10px;
+}
 
-/* 2. banner */
+/* index page */
 
 #gallery-hero-con {
-	/* background-color: #aaaaaa; */
-	background: url(../images/Liquor-Drop-Home-Page-Banner-192.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 805px;
+	background-color: #aaaaaa;
+	background: url(../images/index-banner-mobile.png);
+	height: 458px;
 }
 
 #gallery-gift {
-	grid-column: 1/5;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 511px;
-	width: 611px;
-	margin-top: 100px;
+	height: 350px;
+	margin-top: 20px;
 	background-color: rgba(255, 69, 69, 0.2);
 }
 
 #gallery-gift h2 {
 	background-color: #f82626;
 	margin-top: 30px;
-	font-size: 60px;
+	font-size: 20px;
 	font-weight: bold;
 }
 
 #gallery-gift p {
-	margin-top: 30px;
-	font-size: 30px;
+	margin-top: 20px;
+	font-size: 20px;
 }
 
 #gift-btn {
@@ -221,7 +168,7 @@ you work on and the intended audience */
 }
 
 #gift-btn a {
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .btn-1 {
@@ -248,34 +195,19 @@ you work on and the intended audience */
 }
 
 #gallery-controls {
-	/* margin-top: 200px; */
-	grid-column: 6/8;
+	grid-column: 1/-1;
 	display: flex;
 	justify-content: center;
-	align-items: flex-end;
+
+	align-self: end;
 }
-
-.dot {
-	background-color: #dddddd;
-	height: 30px;
-	width: 30px;
-	border-radius: 50%;
-	margin: 5px;
-	/* align-self: flex-end; */
-  }
-
-
-/* 3. container below */
-
 
 #brew-products {
 	/* margin-top: 100px;
 	margin-bottom: 100px; */
 	background-color: #ffffff;
-	height: 496px;
+	height: 1570px;
 }
-
-
 
 #brew-products h2 {
 	grid-column: 1/-1;
@@ -283,27 +215,27 @@ you work on and the intended audience */
 }
 
 #brew-product1 {
-	background: url(../images/brewery-01.jpg);
-	background-repeat: no-repeat;
 	grid-column: 1/5;
 	/* Remove as content will dictate height */
-	height: 456px;
-	margin-left: -50px;
+	height: 300px;
 	margin-top: 20px;
+	background: url(../images/brewery-01-mobile.jpg);
+
 }
 
 #brew-product1 h2 {
-	font-size: 54px;
+	font-size: 34px;
 	color: rgb(255, 255, 255);
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	margin-top: 30px;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
 #brew-product1 p {
-	font-size: 25px;
+	font-size: 15px;
 	color: rgb(255, 255, 255);
 	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
 
 }
 
@@ -328,15 +260,50 @@ you work on and the intended audience */
 	color: #111520;
 }
 
+#col-brew1 {
+	grid-column: 1/4;
+	background-color: rgb(79, 79, 79);
+	height: 248px;
+
+	margin-right: -50px;
+
+}
+
+#col-brew2 {
+	grid-column: 1/4;
+	background-color: #ffffff;
+	height: 248px;
+	margin-right: -50px;
+}
+
+#col-brew3 {
+	grid-column: 1/4;
+	background-color: rgb(79, 79, 79);
+	height: 248px;
+	margin-right: -50px;
+}
+
+#col-brew4 {
+	grid-column: 1/4;
+	background-color: rgb(255, 255, 255);
+	height: 248px;
+	margin-right: -50px;
+}
+
+.brew-product-box {
+	background-color: #ddd;
+}
+
+
 .brew-icons {
-	margin-top: 20px;
+	margin-top: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .brew-titles {
-	font-size: 25px;
+	font-size: 20px;
 	color: #d8a327;
 	margin-top: 15px;
 	margin-bottom: 10px;
@@ -344,165 +311,137 @@ you work on and the intended audience */
 
 .brew-text {
 	margin-top: 20px;
-	font-size: 25px;
+	font-size: 20px;
 	color: #000;
 	text-align: center;
-}
-
-#col-brew1 {
-	grid-column: 1/5;
-	background-color: rgb(79, 79, 79);
-	height: 248px;
-}
-
-#col-brew2 {
-	grid-column: 5/9;
-	background-color: #DDDDDD;
-	height: 248px;
-}
-
-#col-brew3 {
-	grid-column: 1/5;
-	background-color: #DDDDDD;
-	height: 248px;
-}
-
-#col-brew4 {
-	grid-column: 5/9;
-	background-color: rgb(79, 79, 79);
-	height: 248px;
 }
 
 #about-con {
 	background-color: #0578B5;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	height: 665px;
 }
+
 
 .about-text-con {
 	margin-top: 30px;
-	font-size: 25px;
+	font-size: 15px;
 	color: #000;
 	text-align: center;
 }
 
+#about-title {
+	text-align: center;
+}
+
 #about-img {
-	grid-column: 2/6;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	background: url(../images/img_3463.jpg);
+	background: url(../images/ourstory-img-mobile.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-
+	height: 210px;
+	margin-top: 50px;
 }
 
 #about-text {
-	grid-column: 9/-1;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 379px;
+	height: 300px;
+	background-color: #aaaaaa;
 	text-align: center;
+	margin-top: 50px;
+
 }
 
 #products {
 	background-color: #ffffff;
-	height: 900px;
-	position: relative;
+	height: auto;
 }
 
 #products h2,h3 {
 	grid-column: 1/-1;
 	text-align: center;
-	font-size: 30px;
-	margin-top: 30px;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 15px;
 	
 }
 
 #product1 {
-	grid-column: 1/4;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 615px;
+	height: 400px;
+	margin-top: 10px;
 }
 
 #product2 {
-	grid-column: 4/7;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 615px;
+	height: 400px;
+	margin-top: 10px;
 }
 
 #product3 {
-	grid-column: 7/10;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 615px;
+	height: 400px;
+	margin-top: 10px;
 }
 
 #product4 {
-	grid-column: 10/-1;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 615px;
+	height: 400px;
+	margin-top: 10px;
 }
 
-#mobile-slider-left {
-	position: absolute;
-	left: 0;
-	font-size: 120px;
-	color:rgb(154, 154, 154);
-	top: 350px;
-	cursor: pointer;
+#product-btn {
+	grid-column: 1/-1;
+	/* Remove as content will dictate height */
+	height: 50px;
+	margin-top: 10px;
+	text-align: center;
 }
-
-#mobile-slider-left:hover {
-	color: #000;
-}
-
-#mobile-slider-right {
-	position: absolute;
-	right: 0;
-	font-size: 120px;
-	color:rgb(154, 154, 154);
-	top: 350px;
-	cursor: pointer;
-}
-
-#mobile-slider-right:hover {
-	color: #000;
-}
-
-/* .product-box {
-	background-color: #ddd;
-} */
 
 #blog {
 	background-color: #0578B5;
-	height: 900px;
+	height: auto;
 }
 
 #blog h2 {
 	grid-column: 1/-1;
 	text-align: center;
-	font-size: 73px;
+	font-size: 23px;
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .blog-text {
-	font-size: 25px;
+	font-size: 15px;
 	margin-top: 50px;
+	text-align: center;
 }
-
 #blog1 {
-	grid-column: 1/5;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 694px;
+	height: 436px;
 }
 
 #blog2 {
-	grid-column: 5/9;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 694px;
+	height: 436px;
+	margin-top: 40px;
 }
 
 #blog3 {
-	grid-column: 9/-1;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 694px;
+	height: 436px;
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
 .blog-box {
@@ -519,7 +458,7 @@ you work on and the intended audience */
 	background-color: #09A08F;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	height: 422.51px;
+	height: auto;
 	display: flex;
 }
 
@@ -543,54 +482,53 @@ you work on and the intended audience */
 }
 
 .award-icons h2 {
-	font-size: 120px;
+	font-size: 60px;
 }
 
 .award-icons h3 {
-	font-size: 50px;
+	font-size: 30px;
 }
 
 #award-col1 {
-	grid-column: 1/2;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 400px;
-	width: 361px;
+	height: 270px;
+	margin-top: 20px;
 	align-self: center;
 }
 
 #award-col2 {
-	grid-column: 4/5;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 400px;
-	width: 361px;
+	height: 270px;
+	margin-top: 20px;
 	align-self: center;
 }
 
 #award-col3 {
-	grid-column: 7/8;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 400px;
-	width: 361px;
+	height: 270px;
+	margin-top: 20px;
 	align-self: center;
 }
 
 #award-col4 {
-	grid-column: 10/11;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 400px;
-	width: 361px;
+	height: 270px;
+	margin-top: 20px;
 	align-self: center;
 }
 
-
 #media {
-	background-color: rgb(255, 255, 255);
+	background-color: #ffffff;
 }
 
 #map {
-	grid-column: 1/6;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 539.9px;
+	height: 300px;
 }
 
 #map:hover {
@@ -599,9 +537,10 @@ you work on and the intended audience */
 }
 
 #video {
-	grid-column: 6/-1;
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 539.9px;
+	margin-top: 20px;
+	height: 350px;
 	background-color: #000;
 }
 
@@ -609,17 +548,219 @@ you work on and the intended audience */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 200px;
+	margin-top: 140px;
 }
 
 #video-icon a {
 	color: rgb(255, 0, 0);
-	font-size: 100px;
+	font-size: 70px;
 }
 
 #video-icon a:hover {
 	color: rgb(255, 255, 255);
-	font-size: 100px;
+}
+
+/*Common page elements  */
+
+#footer-con {
+	background-color: rgb(98, 187, 255);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#footer-logo {
+	grid-column: 2/4;
+	height: 80px;
+	margin-bottom: 30px;
+}
+
+#footer-useful-link {
+	grid-column: 1/3;
+	/* Remove as content will dictate height */
+	height: 142px;
+}
+
+#footer-nav li {
+	margin-top: 15px;
+}
+
+#footer-nav li a{
+	font-size: 10px;
+	color: rgb(0, 0, 0);
+}
+
+#footer-nav li a:hover{
+	color: #FF7F00;
+}
+
+#footer-location h3 {
+	font-size: 5px;
+}
+
+#footer-location ul {
+	margin-top: 5px;
+	font-size: 5px;
+	grid-column: 1/2;
+}
+
+#footer-location ul li {
+	margin-top: 5px;
+}
+
+#footer-social  {
+	grid-column: 1/-1;
+	/* Remove as content will dictate height */
+	height: auto;
+	margin-bottom: 20px;
+	margin-top: 70px;
+	text-align: center;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid #d6d6d6;
+    border-radius:  5px;
+    background-color: #DDDDDD;
+    margin-bottom: 10px;
+    font: inherit;
+}
+
+input[type="submit"] {
+    width: 100px;
+    padding: 12px 12px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: all 200ms ease-in;
+	font-size: 15px;
+	margin-bottom: 20px;
+	
+}
+
+input[type="submit"]:hover {
+    background-color: #656565;
+	color: #ffffff;
+}
+
+
+
+#footer-media a {
+	color: #000000;
+	font-size: 20px;
+	margin: 0 20px;
+}
+
+#footer-media a:hover {
+	color: #ff0000;
+	transition: all .5s ease-in-out;
+
+}
+
+#footer-location {
+	grid-column: 3/-1;
+	/* Remove as content will dictate height */
+	height: 142px;
+}
+
+#web-creater {
+	grid-column: 1/-1;
+	margin-left: 60px;
+	font-size: 13px;
+}
+
+/* shop page start */
+
+#banner-hero-con {
+	background: url(../images/banner-mobile.png);
+	height: 458px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.beers-title-con {
+	margin-top: 30px;
+}
+
+.beers-title img {
+	grid-column: 1/2;
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+.beers-title h3 {
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	font-weight: bold;
+	grid-column: 2/3;
+	margin-top: 12px;
+	margin-left: -30px;
+}
+
+
+.product-box ul li {
+	text-align: center;
+	padding: 5px;
+	height: auto;
+	overflow: hidden;
+	margin-left: -30px;
+}
+
+.beers-title-con h2 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.beers-title {
+	background-color: #18191a;
+	border-bottom: 10px solid #343837;
+	height: 53px;
+	max-width: 375px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.product-box {
+	background-color: rgb(255, 255, 255);
+	grid-column: span 4 / span 4;
+	/* Remove as content will dictate height */
+	height: auto;
+	margin-bottom: 45px;
+	
+}
+
+
+.product-image {
+	margin-bottom: 30px;
+	width: 100%;
+	height: 367px;
+	display: block;
+	transition: transform 2s;
+	object-fit: cover;
+}
+
+.product-image:hover {
+	opacity: 1;
+	/* transform: translateY(15px); */
+	filter: contrast(50%);
+}
+
+.product-text {
+	margin-top: 15px;
+	font-size: 30px;
+}
+
+.sl_content {
+	margin-top: -15px;
+	text-align: center;
+}
+
+.sl_content span {
+	display: block;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 15px;
 }
 
 #choose-us {
@@ -632,7 +773,7 @@ you work on and the intended audience */
 }
 
 #choose-us h2 {
-	font-size: 80px;
+	font-size: 40px;
 	font-weight: bold;
 	color: rgb(255, 255, 255);
 	/* align-items: center; */
@@ -643,255 +784,4 @@ you work on and the intended audience */
 	font-size: 40px;
 	text-align: center;
 	color: rgb(255, 255, 255);
-}
-
-/*Common page elements  */
-
-/* 4. footer */
-
-#footer-con {
-	background-color: rgb(98, 187, 255);;
-	padding-top: 30px;
-	padding-bottom: 20px;
-}
-
-#footer-logo {
-	grid-column: 6/8;
-	height: 200px;
-	/* width: 200px; */
-}
-
-#footer-location {
-	grid-column: 1/4;
-	/* Remove as content will dictate height */
-	height: 300px;
-	margin-top: -40px;
-}
-
-#footer-location h3 {
-	font-size: 40px;
-}
-
-#footer-location ul {
-	margin-top: 30px;
-	font-size: 25px;
-}
-
-#footer-location ul li {
-	margin-top: 10px;
-}
-
-
-#footer-useful-link {
-	grid-column: 5/8;
-	/* Remove as content will dictate height */
-	height: 300px;
-	margin-bottom: 50px;
-	margin-left: 100px;
-}
-
-#footer-nav li {
-	margin-top: 20px;
-}
-
-#footer-nav li a{
-	font-size: 30px;
-	color: rgb(0, 0, 0);
-}
-
-#footer-nav li a:hover{
-	font-size: 30px;
-	color: #FF7F00;
-}
-
-#newsletter h3 {
-	font-size: 30px;
-	font-weight: bold;
-	color: rgb(55, 55, 55);
-	margin-bottom: 30px;
-}
-
-
-
-#footer-newsletter1 form {
-	display: flex;
-	flex-direction: column;
-}
-
-
-input, textarea {
-    padding: 22px;
-    border: 2px solid #d6d6d6;
-    border-radius:  5px;
-    background-color: #DDDDDD;
-    margin-bottom: 30px;
-    font: inherit;
-}
-
-.footer-newsletter1_submit {
-	width: 80px;
-
-}
-
-input[type="submit"] {
-    width: 100px;
-    padding: 16px 32px;
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    border: none;
-    transition: all 200ms ease-in;
-
-	
-}
-
-input[type="submit"]:hover {
-    background-color: #656565;
-	color: #ffffff;
-}
-
-#footer-social {
-	grid-column: 10/-1;
-	/* Remove as content will dictate height */
-	height: 300px;
-	margin-top: -30px;
-}
-
-#footer-media a {
-	color: #000000;
-	font-size: 30px;
-	margin: 0 20px;
-}
-
-#footer-media a:hover {
-	color: #ff0000;
-	transition: all .5s ease-in-out;
-
-}
-
-#web-creater {
-	grid-column: 5/9;
-	margin-left: 60px;
-	font-size: 20px;
-}
-
-/* 5. page shop below */
-
-#banner-hero-con {
-	background-color: #aaaaaa;
-	background: url(../images/shop-banner.png);
-	height: 805px;
-}
-
-#banner-controls {
-	margin-top: 200px;
-	grid-column: 6/8;
-}
-
-
-.dot {
-	background-color: #dddddd;
-	height: 30px;
-	width: 30px;
-	border-radius: 50%;
-	margin: 5px;
-	display: inline-block;
-	align-self: flex-end;
-	margin-top: 500px;
-  }
-
-
-.product-box h2 {
-	text-align: center;
-  }
-
-.product-box {
-	background-color: rgb(255, 255, 255);
-	grid-column: span 4 / span 4;
-	/* Remove as content will dictate height */
-	height: auto;
-	margin-bottom: 45px;
-	
-}
-
-#product h2 {
-	font-size: 35px;
-}
-
-.beers-title-con {
-	margin-top: 50px;
-}
-
-.beers-title-con h2 {
-	text-align: center;
-	font-size: 30px;
-	font-weight: bold;
-}
-
-.beers-title {
-	background-color: #18191a;
-	border-bottom: 10px solid #343837;
-	height: 100px;
-	max-width: 1920px;
-	margin-bottom: 30px;
-	margin-top: 20px;
-
-}
-
-.beers-title img {
-	grid-column: 1/2;
-	width: 70px;
-	height: 70px;
-	margin-top: 15px;
-}
-
-.beers-title h3 {
-	color: rgb(255, 255, 255);
-	font-size: 40px;
-	font-weight: bold;
-	grid-column: 2/3;
-	margin-top: 30px;
-}
-
-.product-box ul li {
-	text-align: center;
-	padding-bottom: 20px;
-	height: auto;
-	overflow: hidden;
-	cursor: pointer;
-}
-
-
-.product-image {
-	margin-bottom: 30px;
-	width: 100%;
-	height: 615px;
-	display: block;
-	transition: transform 2s;
-	object-fit: cover;
-}
-
-.product-image:hover {
-	opacity: 1;
-	/* transform: translateY(15px); */
-	filter: contrast(50%);
-}
-
-
-
-.product-text {
-	margin-top: 15px;
-	font-size: 40px;
-}
-
-.sl_content {
-	margin-top: -15px;
-	text-align: center;
-}
-
-.sl_content span {
-	display: block;
-	text-align: center;
-	font-size: 25px;
-	margin-top: -5px;
-	font-weight: bold;
 }
