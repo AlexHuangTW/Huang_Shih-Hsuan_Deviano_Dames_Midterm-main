@@ -808,7 +808,7 @@ input[type="submit"]:hover {
 	background-color: rgb(255, 255, 255);
 	grid-column: span 4 / span 4;
 	/* Remove as content will dictate height */
-	height: 868px;
+	height: auto;
 	margin-bottom: 45px;
 	
 }
@@ -876,17 +876,7 @@ input[type="submit"]:hover {
 	filter: contrast(50%);
 }
 
-.product-box ul li span {
-	font-size: 25px;
-	padding: 10px 5px;
-    letter-spacing: 4px;
-    overflow: hidden;
-    transition: 0.2s;
-	color: #3a3a3a;
-	/* img don't cover the name of product */
-	position: relative;
-	margin-top: 20px;
-}
+
 
 .product-text {
 	margin-top: 15px;
@@ -894,14 +884,14 @@ input[type="submit"]:hover {
 }
 
 .sl_content {
-	margin-top: -25px;
+	margin-top: -15px;
 	text-align: center;
 }
 
 .sl_content span {
 	display: block;
 	text-align: center;
-	font-size: 20px;
+	font-size: 25px;
 	margin-top: -5px;
 	font-weight: bold;
 }
